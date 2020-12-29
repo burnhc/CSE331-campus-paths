@@ -1,0 +1,19 @@
+# Tests createGraph, addNode, and listNodes to check if new nodes are
+# created properly. Creates four nodes and then prints all the nodes.
+
+# Create a new graph.
+created graph graph1
+
+# Add a single node to the graph.
+added node n1 to graph1
+
+# Print the node in the graph.
+graph1 contains: n1
+
+# Add three more nodes to the graph.
+added node n2 to graph1
+added node n3 to graph1
+added node n4 to graph1
+
+# Print all the nodes in the graph.
+graph1 contains: n1 n2 n3 n4

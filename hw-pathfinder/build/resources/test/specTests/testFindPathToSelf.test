@@ -1,0 +1,11 @@
+# Tests that finding a path from a node to itself is properly
+# represented.
+
+# Create a new graph.
+CreateGraph graph1
+
+# Add a node into the graph.
+AddNode graph1 n1
+
+# Find a path from n1 to n1.
+FindPath graph1 n1 n1

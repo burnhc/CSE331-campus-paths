@@ -1,0 +1,23 @@
+# Tests createGraph, addNode, and getNodes with near-identical
+# operations to ensure multiple graphs do not modify each other.
+
+# Create two new graphs.
+CreateGraph graph1
+CreateGraph graph2
+
+# Add two nodes to graph1 and graph2.
+AddNode graph1 n1
+AddNode graph2 n1
+AddNode graph1 n2
+AddNode graph2 n2
+
+# Print all the nodes in each graph.
+ListNodes graph1
+ListNodes graph2
+
+# Add another node to graph2.
+AddNode graph2 n3
+
+# Print all the nodes in each graph.
+ListNodes graph1
+ListNodes graph2

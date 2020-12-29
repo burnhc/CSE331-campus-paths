@@ -1,0 +1,18 @@
+# Tests that no path being found is properly
+# represented.
+
+# Create a new graph.
+CreateGraph graph1
+
+# Add nodes to the graph.
+AddNode graph1 n1
+AddNode graph1 n2
+
+# Add edge between n1 and n2.
+AddEdge graph1 n1 n2 2.0
+
+# Find a path from n1 to n2.
+FindPath graph1 n1 n2
+
+# Find a path from n2 to n1.
+FindPath graph1 n2 n1

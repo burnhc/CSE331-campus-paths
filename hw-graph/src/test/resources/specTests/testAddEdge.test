@@ -1,0 +1,19 @@
+# Tests addNode and listChildren to check if new edges are created properly.
+# Creates three edges from three nodes and then prints the children of n1.
+
+# Create a new graph.
+CreateGraph graph1
+
+# Add three nodes to the graph.
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+
+# Create three edges between the three nodes.
+AddEdge graph1 n1 n2 edge1
+AddEdge graph1 n1 n3 edge2
+AddEdge graph1 n2 n3 edge3
+
+# Print all the nodes in the graph and the children of n1.
+ListNodes graph1
+ListChildren graph1 n1

@@ -1,0 +1,202 @@
+/*
+ * Copyright (C) 2020 Hal Perkins.  All rights reserved.  Permission is
+ * hereby granted to students registered for University of Washington
+ * CSE 331 for use solely during Winter Quarter 2020 for purposes of
+ * the course.  No other use, copying, distribution, or modification
+ * is permitted without prior written consent. Copyrights for
+ * third-party components of this work must be honored.  Instructors
+ * interested in reusing these course materials should contact the
+ * author.
+ */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    color: #3D3D3D;
+}
+
+canvas {
+    width: 100%;
+    display: inline-block;
+}
+
+hr {
+    border: 3px solid #4b2e83;
+    border-radius: 2px;
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+/* Wraps all newline characters */
+div {
+    white-space: pre-wrap;
+}
+
+/******************************************/
+/* Customizes the main sidebar            */
+/******************************************/
+    #app-title {
+        font-family: 'Encode Sans Condensed', sans-serif;
+        color: white;
+        text-shadow: 2px 2px 4px #333333;
+        font-size: 35px;
+        margin-top: 0;
+    }
+
+    #sidebar {
+        display: inline-block;
+        float: left;
+        min-width: 600px;
+        max-width: 600px;
+        margin: 0;
+    }
+
+    /* I had to put cherries.jpg into the src/ folder
+    instead of public/ because CSS does not support
+    imports outside of src/. */
+    #sidebar-top {
+        padding: 15% 10% 5%;
+        background-image: url("Cherries.jpg");
+    }
+
+/******************************************/
+/* Customizes the building selection      */
+/******************************************/
+    #select {
+        padding-bottom: 10px;
+    }
+
+    #no-options-message {
+        text-align: center;
+        color: #888;
+    }
+
+    #get-directions-button {
+        background-color: #4b2e83;
+        color: white;
+        margin-right: 20px;
+    }
+
+    #clear-button {
+        color: white;
+        text-shadow: 2px 2px 3px black;
+    }
+
+/******************************************/
+/* Customizes the zoom tools on the map   */
+/******************************************/
+    #map-tools {
+        z-index: 1;
+        position: absolute;
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 25px;
+
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px #333333;
+    }
+
+/******************************************/
+/* Customizes the directions output       */
+/******************************************/
+    #directions-wrapper {
+        padding: 3% 10% 0 10%;
+        position: relative;
+    }
+
+    #directions-default {
+        vertical-align: middle;
+        line-height: 100px;
+        color: #777777;
+    }
+
+    #directions-header {
+        font-size: 20px;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    #directions-subheader {
+        margin-top: 10px;
+        font-size: 17px;
+        color: #777777;
+        font-variant: all-petite-caps;
+        letter-spacing: 1px;
+    }
+
+    #directions-body {
+        max-height: 250px;
+        line-height: 1.8em;
+        overflow-y: auto;
+    }
+
+    #directions-footer {
+        background-color: #b7a57a;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 17px;
+    }
+
+/******************************************/
+/* Customizes the page footer             */
+/******************************************/
+    #footer {
+        width: 100%;
+        background-color: #4b2e83;
+        bottom: 0;
+        height: 5%;
+        position: fixed;
+        left: 0;
+    }
+
+    #reset-button {
+        color: white;
+        border-color: white;
+        margin-left: 3%;
+        margin-top: 5px;
+    }
+
+/******************************************/
+/* Customizes the scroll bar              */
+/* (only compatible with Chrome)          */
+/******************************************/
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #d9d9d9;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #d9d9d9;
+    }
+
+/******************************************/
+/* Customizes the printer-friendly layout */
+/******************************************/
+    #print-button {
+        float: right;
+    }
+
+    #directions-print {
+        margin: 25mm 25mm 25mm 25mm;
+    }
+
+    #directions-body-print {
+        line-height: 1.8em;
+    }
+
+    #directions-footer-print {
+        border-radius: 5px;
+        font-size: 17px;
+    }

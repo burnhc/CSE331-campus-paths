@@ -1,0 +1,21 @@
+# Tests listing children with doubles as the labels
+# (not strings anymore).
+
+# Create a new graph.
+created graph graph1
+
+# Add nodes into the graph.
+added node n1 to graph1
+added node n2 to graph1
+added node n3 to graph1
+
+# Add edges between the nodes.
+added edge 2.000 from n1 to n2 in graph1
+added edge 3.000 from n1 to n3 in graph1
+
+# List the nodes in the graph.
+graph1 contains: n1 n2 n3
+
+# List the children of each node in the graph.
+the children of n1 in graph1 are: n2(2.000) n3(3.000)
+the children of n2 in graph1 are:

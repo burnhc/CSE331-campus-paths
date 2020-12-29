@@ -1,0 +1,11 @@
+# Tests that an empty graph is represented properly.
+
+# Create a new graph.
+created graph graph1
+
+# Print all the nodes in the graph.
+graph1 contains:
+
+# Find a path between two non-existent nodes.
+unknown node n1
+unknown node n2

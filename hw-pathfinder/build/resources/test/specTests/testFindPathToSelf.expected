@@ -1,0 +1,12 @@
+# Tests that finding a path from a node to itself is properly
+# represented.
+
+# Create a new graph.
+created graph graph1
+
+# Add a node into the graph.
+added node n1 to graph1
+
+# Find a path from n1 to n1.
+path from n1 to n1:
+total cost: 0.000

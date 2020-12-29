@@ -1,0 +1,69 @@
+CSE 331 Homework.  Answers to written questions.
+Chandra Burnham
+
+1)
+    A. Collection of edges:
+        ADVANTAGE: O(1) time complexity when adding a new edge.
+                   Ease of implementing standard operations.
+                   Easy to find all edges for a node.
+                   TreeMap offers automatic sorting.
+        DISADVANTAGE:
+                   Requires extra memory to store pointers.
+
+    B. Adjacency list:
+        ADVANTAGE: O(1) time complexity when adding a new edge.
+                   Easy to find all edges for a node.
+        DISADVANTAGE: Less than O(V^2) space complexity but greater
+                      than O(1).
+
+    C. Adjacency matrix:
+        ADVANTAGE: O(1) time complexity when removing an edge.
+                   Easy to find an individual edge.
+        DISADVANTAGE: O(1) time complexity when adding an edge.
+                      O(V^2) space complexity.
+
+
+2) MY REPRESENTATION
+
+The representation that I chose is a collection of edges. I use a TreeMap
+that stores the nodes and edges connected to that node because it already
+provides all the basic operations I need (get, contains, add, remove, etc.).
+Using a TreeMap sorts all the nodes in lexicographical order automatically
+at the cost of slightly slower processing.
+
+
+3) CHANGES TO SPECIFICATIONS
+
+- I changed my spec in many of my methods to require that the arguments were non-
+null, or I threw an IllegalArgumentException.
+
+- I was debating about whether to throw exceptions with invalid values, for
+example when querying nodes that do not exist, but ultimately I decided against
+it because I did not want the client program to terminate prematurely or have to
+catch them each time.
+
+- At first, I had removeEdge return the edge since I was inspired by other
+collections that operated similarly. But as I was implementing it, I figured that
+the use cases in which you'd want to retrieve a removed edge is pretty scarce. I
+instead changed the method to return true if the remove operation is successful so
+it's more consistent with my other mutator methods.
+
+
+4) ADDITIONAL TESTS
+
+- I actually had to make some logic corrections to my tests. I had "expected" and
+"actual" swapped around in my assert statements, which made my tests confusing to
+interpret. Another error was that in my test for removing a non-existent edge, I
+accidentally had it assert true if the remove was successful when it was actually
+supposed to be asserting false.
+
+- I added a spec test for adding identical nodes to two different graphs and an
+implementation test to remove identical edges from two different graphs, since I
+was lacking multiple graph testing in my suite before. Lastly, I added a test for
+my graph toString method.
+
+
+(I just want to say that writing tests before implementing helped me so much! I
+was dubious about this before, but I see now what a powerful strategy it is for
+catching bugs early on in the development process. I learned a lot from this
+assignment.)

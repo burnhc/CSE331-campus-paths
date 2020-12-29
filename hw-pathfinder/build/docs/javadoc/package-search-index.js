@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"pathfinder"},{"l":"pathfinder.datastructures"},{"l":"pathfinder.parser"},{"l":"pathfinder.textInterface"}]

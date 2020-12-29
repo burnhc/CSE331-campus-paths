@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pathfinder.implTest.datastructures.TestPath" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-02-28T04:48:01" hostname="DESKTOP-0D3ORD0" time="0.003">
+  <properties/>
+  <testcase name="testIteratorUnsupportedRemove" classname="pathfinder.implTest.datastructures.TestPath" time="0.0"/>
+  <testcase name="testEmptyPathEquality" classname="pathfinder.implTest.datastructures.TestPath" time="0.0"/>
+  <testcase name="testPathHashcodeConsistent" classname="pathfinder.implTest.datastructures.TestPath" time="0.0"/>
+  <testcase name="testEmptyPathHasNoDistance" classname="pathfinder.implTest.datastructures.TestPath" time="0.0"/>
+  <testcase name="testExtendPathLastNodeUpdate" classname="pathfinder.implTest.datastructures.TestPath" time="0.0"/>
+  <testcase name="testNonemptyPathEquality" classname="pathfinder.implTest.datastructures.TestPath" time="0.0"/>
+  <testcase name="testEmptyPathLastNode" classname="pathfinder.implTest.datastructures.TestPath" time="0.0"/>
+  <testcase name="testExtendPathDistanceUpdate" classname="pathfinder.implTest.datastructures.TestPath" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

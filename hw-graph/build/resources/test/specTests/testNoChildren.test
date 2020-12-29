@@ -1,0 +1,14 @@
+# Tests listChildren to check if nodes with no children are represented properly.
+# Creates two nodes n1 and n2 and then prints the children of n1 and n2.
+
+# Create a new graph.
+CreateGraph graph1
+
+# Add two nodes to the graph.
+AddNode graph1 n1
+AddNode graph1 n2
+
+# Print all the nodes in the graph and the children of n1 and n2.
+ListNodes graph1
+ListChildren graph1 n1
+ListChildren graph1 n2

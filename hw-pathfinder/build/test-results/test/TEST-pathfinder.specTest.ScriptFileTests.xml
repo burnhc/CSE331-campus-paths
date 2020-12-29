@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pathfinder.specTest.ScriptFileTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-02-28T04:48:00" hostname="DESKTOP-0D3ORD0" time="0.152">
+  <properties/>
+  <testcase name="checkOutput[exampleDijkstraTest]" classname="pathfinder.specTest.ScriptFileTests" time="0.107"/>
+  <testcase name="checkOutput[testEmptyGraph]" classname="pathfinder.specTest.ScriptFileTests" time="0.006"/>
+  <testcase name="checkOutput[testFindPathToSelf]" classname="pathfinder.specTest.ScriptFileTests" time="0.005"/>
+  <testcase name="checkOutput[testListChildren]" classname="pathfinder.specTest.ScriptFileTests" time="0.019"/>
+  <testcase name="checkOutput[testNoPathFound]" classname="pathfinder.specTest.ScriptFileTests" time="0.005"/>
+  <testcase name="checkOutput[testSmallGraph]" classname="pathfinder.specTest.ScriptFileTests" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

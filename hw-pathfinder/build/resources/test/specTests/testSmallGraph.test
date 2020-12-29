@@ -1,0 +1,30 @@
+# Tests that the search algorithm works properly by
+# prioritizing the path with the least cost in a graph
+# with different paths to the same node with the same
+# number of hops.
+
+# Create a new graph.
+CreateGraph graph
+
+# Add several nodes to the graph.
+AddNode graph E
+AddNode graph C
+AddNode graph A
+AddNode graph D
+AddNode graph B
+AddNode graph F
+AddNode graph G
+
+# Add edges between the nodes.
+AddEdge graph E D 5.0
+AddEdge graph E C 2.0
+AddEdge graph E F 3.0
+AddEdge graph D B 15.0
+AddEdge graph B A 2.0
+AddEdge graph F G 3.0
+AddEdge graph G A 12.0
+AddEdge graph C B 9.0
+AddEdge graph C G 8.0
+
+# Find a path from E to A.
+FindPath graph E A

@@ -1,0 +1,21 @@
+# Tests listing children with doubles as the labels
+# (not strings anymore).
+
+# Create a new graph.
+CreateGraph graph1
+
+# Add nodes into the graph.
+AddNode graph1 n1
+AddNode graph1 n2
+AddNode graph1 n3
+
+# Add edges between the nodes.
+AddEdge graph1 n1 n2 2.0
+AddEdge graph1 n1 n3 3.0
+
+# List the nodes in the graph.
+ListNodes graph1
+
+# List the children of each node in the graph.
+ListChildren graph1 n1
+ListChildren graph1 n2

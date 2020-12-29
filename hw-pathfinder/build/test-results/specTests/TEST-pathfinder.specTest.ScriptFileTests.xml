@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pathfinder.specTest.ScriptFileTests" tests="6" skipped="0" failures="1" errors="0" timestamp="2020-02-28T04:42:30" hostname="DESKTOP-0D3ORD0" time="0.19">
+  <properties/>
+  <testcase name="checkOutput[exampleDijkstraTest]" classname="pathfinder.specTest.ScriptFileTests" time="0.15"/>
+  <testcase name="checkOutput[testEmptyGraph]" classname="pathfinder.specTest.ScriptFileTests" time="0.007"/>
+  <testcase name="checkOutput[testFindPathToSelf]" classname="pathfinder.specTest.ScriptFileTests" time="0.004"/>
+  <testcase name="checkOutput[testListChildren]" classname="pathfinder.specTest.ScriptFileTests" time="0.014">
+    <failure message="org.junit.ComparisonFailure: testListChildren expected:&lt;... node in the graph.&#10;[the children of n1 in graph1 are: n2(2.000) n3(3.000)&#10;the children of n2 in graph1 are:]&gt; but was:&lt;... node in the graph.&#10;[Exception: java.lang.NullPointerException&#10;Exception: java.lang.NullPointerException]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: testListChildren expected:&lt;... node in the graph.
+[the children of n1 in graph1 are: n2(2.000) n3(3.000)
+the children of n2 in graph1 are:]&gt; but was:&lt;... node in the graph.
+[Exception: java.lang.NullPointerException
+Exception: java.lang.NullPointerException]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at pathfinder.specTest.ScriptFileTests.checkOutput(ScriptFileTests.java:193)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
+  <testcase name="checkOutput[testNoPathFound]" classname="pathfinder.specTest.ScriptFileTests" time="0.004"/>
+  <testcase name="checkOutput[testSmallGraph]" classname="pathfinder.specTest.ScriptFileTests" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

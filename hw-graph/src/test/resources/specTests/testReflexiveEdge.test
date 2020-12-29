@@ -1,0 +1,15 @@
+# Tests that a reflexive edge (an edge that connects a node to
+# itself) is represented properly.
+
+# Create a new graph.
+CreateGraph graph1
+
+# Add a single node.
+AddNode graph1 n1
+
+# Add a edge connecting the node to itself.
+AddEdge graph1 n1 n1 edge1
+
+# Print all the nodes in the graph and the children of n1.
+ListNodes graph1
+ListChildren graph1 n1

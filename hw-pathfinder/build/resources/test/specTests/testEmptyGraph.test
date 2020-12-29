@@ -1,0 +1,10 @@
+# Tests that an empty graph is represented properly.
+
+# Create a new graph.
+CreateGraph graph1
+
+# Print all the nodes in the graph.
+ListNodes graph1
+
+# Find a path between two non-existent nodes.
+FindPath graph1 n1 n2
