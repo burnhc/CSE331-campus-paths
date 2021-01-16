@@ -1,4 +1,5 @@
 # UW Campus Pathfinder Application
+![screenshot](screenshot.png)
 
 This was a final course project from CSE331 (Software Design and Implementation).
 It is a full-stack web application built with Java and React that finds the
